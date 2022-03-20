@@ -36,5 +36,27 @@ public class Exercise
       }
 
       System.out.println( ball + "ボール," + strike + "ストライク" );
+
+      // 練習4-14
+      // 4-13に修正を加える
+      int strike = 0;
+      int ball = 0;
+
+      while( strike < 3 && ball < 4 )
+      {
+        System.out.print( "ストライク=1 or ボール=2 or ファウル=3？" );
+
+        int judge = Integer.parseInt( br.readLine() );
+
+        if( judge == 1 )
+            strike++;
+        else if( judge == 2 )
+            ball++;
+        else if( judge == 3 && strike < 2 )
+            strike++;
+      }
+
+      System.out.println( ball + "ボール," + strike + "ストライク" );
+
   }
 }
