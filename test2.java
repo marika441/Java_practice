@@ -72,6 +72,18 @@ public class Exercise
           System.out.println( value + "は素数です" );
       else
           System.out.println( value + "は素数ではありません" );
+      
+      // 練習4-16
+      // 素因数分解
+      System.out.println( "2以上の数値を入力して下さい" );
+      int n = Integer.parseInt( br.readLine() );
+
+      for( int x = 2 ; n > 1 ; x++ ){
+          while( ( n % x ) == 0 ){
+              System.out.print( x + " " );
+              n /= x;
+          }
+      }
 
   }
 }
