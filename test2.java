@@ -94,6 +94,19 @@ public class Exercise
 
           System.out.println();
       }
+      // 練習4-18
+      int sum = 0;
 
-        }
+      for( ; ; )
+      {
+          int value = Integer.parseInt( br.readLine() );
+
+          if( value == 0 )
+              break;
+
+          sum += value;
+      }
+
+      System.out.println( "合計は" + sum );
+    }
 }
