@@ -108,5 +108,23 @@ public class Exercise
       }
 
       System.out.println( "合計は" + sum );
+
+      // 練習4-19
+      // 平均値の表示(0で入力を止める)
+      int sum = 0;
+      int count = 0;
+
+      for( ; ; )
+      {
+          int value = Integer.parseInt( br.readLine() );
+
+          if( value == 0 )
+              break;
+
+          sum += value;
+          count++;
+      }
+
+      System.out.println( "平均は" + ( sum / count ) );
     }
 }
