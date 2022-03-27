@@ -126,5 +126,16 @@ public class Exercise
       }
 
       System.out.println( "平均は" + ( sum / count ) );
+
+      // 練習4-20
+      int size = Integer.parseInt( br.readLine() );
+
+      for( int i = 0 ; i < size ; i++ )
+      {
+          for( int j = 0 ; j <= i ; j++ )
+              System.out.print( "$" );
+
+          System.out.println();
+}
     }
 }
