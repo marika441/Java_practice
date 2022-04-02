@@ -28,5 +28,23 @@ public class Exercise
 
     for( int i = 9 ; i >= 0 ; i-- )
         System.out.println( values[i] );
+        
+    // 練習5-3
+    int     values[] = new int[10];
+
+    for( int i = 0 ; i < 10 ; i++ )
+        values[i] = Integer.parseInt( br.readLine() );
+
+    System.out.print( "\n偶数:" );
+
+    for( int n : values )
+        if( ( n % 2 ) == 0 )
+            System.out.print( n + " " );
+
+    System.out.print( "\n奇数:" );
+
+    for( int n : values )
+        if( ( n % 2 ) != 0 )
+            System.out.print( n + " " );
     }
 }
