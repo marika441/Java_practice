@@ -28,7 +28,7 @@ public class Exercise
 
     for( int i = 9 ; i >= 0 ; i-- )
         System.out.println( values[i] );
-        
+
     // 練習5-3
     int     values[] = new int[10];
 
@@ -46,5 +46,17 @@ public class Exercise
     for( int n : values )
         if( ( n % 2 ) != 0 )
             System.out.print( n + " " );
+    // 練習5-4
+    int     values[] = new int[10];
+    int     cnt, sum;
+
+    for( cnt = 0, sum = 0 ; cnt < 10 && sum <= 100 ; cnt++ )
+    {
+        values[cnt] = Integer.parseInt( br.readLine() );
+        sum += values[cnt];
+    }
+
+    for( int i = 0 ; i < cnt ; i ++ )
+        System.out.print( "\n" + values[i] );
     }
 }
