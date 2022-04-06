@@ -70,7 +70,7 @@ public class Exercise
 
     for( int i = 0 ; i < 16 ; i++ )
         System.out.print( binary[i] );
-    
+
     // 練習5-6
         for( int i = 0 ; i < 9 ; i++ )
     {
@@ -87,5 +87,17 @@ public class Exercise
 
         System.out.println();
     }
+
+    // 練習5-7
+    int kuku[][] = new int[9][9];
+
+    for( int i = 0 ; i < 9 ; i++ )
+        for( int j = 0 ; j < 9 ; j++ )
+            kuku[i][j] = ( i + 1 ) * ( j + 1 );
+
+    int p = Integer.parseInt( br.readLine() );
+    int q = Integer.parseInt( br.readLine() );
+
+    System.out.println( kuku[p-1][q-1] );
     }
 }
