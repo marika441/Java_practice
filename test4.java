@@ -23,7 +23,7 @@ public class Exercise
   {
       return ( x + y ) / 2;
   }
-  
+
   // 練習6-3
   public static void main( String[] args ) throws IOException
   {
@@ -43,5 +43,26 @@ public class Exercise
           return n1;
       else
           return n2;
+  }
+
+  // 練習6-4
+  public static void main( String[] args )
+  {
+      DrawTriangle( 3 );
+      System.out.println();
+      DrawTriangle( 4 );
+      System.out.println();
+      DrawTriangle( 5 );
+  }
+
+  static void DrawTriangle( int size )
+  {
+      for( int i = 0 ; i < size ; i++ )
+      {
+          for( int j = 0 ; j <= i ; j++ )
+              System.out.print( "$" );
+
+          System.out.println();
+      }
   }
 }
